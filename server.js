@@ -56,7 +56,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // configure the router
-app.use(`${process.env.BASE_URL}/api`, require("./router/apiRouter"));
+app.use(`/api`, require("./router/apiRouter"));
 
 // app.listen(port, hostname, () => {
 //   console.log(`Express Server is Started at http://${hostname}:${port}`);
